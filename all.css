@@ -68,6 +68,12 @@ table {
         background-size: 334px, 126px;
         background-position: 20px 324px, left -77px top 743px;
     }
+    .bg-ball{
+        background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/ball02.svg"),url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/ball03.svg");
+        background-repeat: no-repeat;
+        background-size: 135px, 153px;
+        background-position: left 287px top 1621px, left -10px top 3381px;
+    }
 }
 .container{
     font-family: Microsoft PhagsPa;
