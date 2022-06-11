@@ -50,17 +50,23 @@ table {
     box-sizing: border-box;
 }
 .bg{
-    background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/bg_home.svg");
+    background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/bg_home.svg"), url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/ball01.svg");
     background-repeat: no-repeat;
-    background-position: right top;
-    background-size: 850px;
+    background-position: right top, left -222px top 589px;
+    background-size: 850px, 360px;
+}
+.bg-ball{
+    background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/ball02.svg"),url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/ball03.svg");
+    background-repeat: no-repeat;
+    background-size: 210px, 150px;
+    background-position: left 1156px top 410px, left 10px top 1300px;
 }
 @media(max-width:768px){
     .bg{
-        background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/bg_home_sm.svg");
+        background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/bg_home_sm.svg"), url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/ball01.svg");
         background-repeat: no-repeat;
-        background-size: 334px;
-        background-position: 20px 324px;
+        background-size: 334px, 126px;
+        background-position: 20px 324px, left -77px top 743px;
     }
 }
 .container{
@@ -135,9 +141,9 @@ table {
     }
 }
 .top{
-    position:absolute ;
-    right:48px;
-    margin-top: 22px;
+    position:fixed ;
+    right:5%;
+    top: 87%;
 }
 .platform{
     padding-top: 217px;
@@ -179,6 +185,10 @@ table {
         display: flex;
         flex-direction: column ;
         align-items: center;
+    }
+    .top img{
+        max-width: 50px;
+        height: auto;
     }
 }
 .item{
@@ -258,6 +268,7 @@ table {
     box-shadow: 0px 2px 10px #00000014;
     border-radius: 12px;
     max-width: 260px;
+    background: #FFFFFF;
 }
 .product{
     display: flex;
@@ -387,6 +398,7 @@ table {
     border-radius: 12px;
     box-shadow: 0px 2px 10px #00000014 ;
     position: relative;
+    background: #FFFFFF;
 }
 .ppl{
     width: 80px;
@@ -394,7 +406,7 @@ table {
     border-radius: 50%;
     box-shadow: 0px 2px 10px #00000014;
     position:absolute ;
-    bottom: 224px;
+    top: -56px;
 }
 .review-card p{
    padding-bottom: 24px;
